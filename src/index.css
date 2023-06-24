@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 body {
   margin: 0;
@@ -12,4 +12,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eddc6d;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(220, 170, 20);
 }
