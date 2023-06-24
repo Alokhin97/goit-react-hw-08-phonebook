@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const HeaderLayout = styled('header')`
   position: fixed;
   width: 100%;
-  background-color: #f2e06c;
+  background-color: #FFA500;
   box-shadow: 0px 2px 8px 1px grey;
 `;
 
@@ -48,7 +48,7 @@ export const NavItem = styled(NavLink)`
   :focus,
   .active {
     background-color: #fff;
-    color: #f2e06c;
+    color: #FFA500;
   }
 `;
 export const NavGreeting = styled('p')`
