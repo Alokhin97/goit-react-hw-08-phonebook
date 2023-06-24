@@ -11,7 +11,7 @@ const authSlice = createSlice({
     token: null,
     isLoggedIn: false,
   },
-  extraReducers: builder =>
+  extraReducers: (builder) =>
     builder
       .addCase(register.pending, (state, action) => state)
       .addCase(register.fulfilled, (state, action) => {
