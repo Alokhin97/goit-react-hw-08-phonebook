@@ -11,6 +11,8 @@ import {
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/operations';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const LogIn = () => {
   const [passwordType, setPasswordType] = useState('password');
@@ -47,6 +49,10 @@ const LogIn = () => {
         <RegistrationLabel htmlFor="">
           <PasswordBox>
             <span>Password</span>
+            <VisibilityButton onClick={changePasswordType}>
+              {passwordType === 'password' && <VisibilityIcon />}
+              {passwordType === 'text' && <VisibilityOffIcon />}
+            </VisibilityButton>
           </PasswordBox>
           <RegistrationInput required name="password" type={passwordType} />
         </RegistrationLabel>
